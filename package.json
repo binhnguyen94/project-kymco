@@ -1,5 +1,5 @@
 {
-  "name": "grunt-template-project",
+  "name": "kymco-project",
   "version": "1.0.0",
   "description": "This is grunt template project for training",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "keywords": [
     "task"
   ],
-  "author": "Tran Nghia CFD",
+  "author": "Binh Nguyen",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.2.1",

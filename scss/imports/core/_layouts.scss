@@ -84,19 +84,19 @@ body {
         margin: auto;
         @include visible;
     }
-    @include lg {
+    @include lg-desktop {
         // CSS responsive large desktop
     }
-    @include md {
+    @include desktop {
         // CSS responsive desktop
     }
-    @include sm {
+    @include tablet {
         // CSS responsive tablet
     }
-    @include xs {
+    @include mobile {
         // CSS responsive mobile
     }
-    @include xxs {
+    @include xxs-mobile {
         // CSS responsive small mobile
     }
 
