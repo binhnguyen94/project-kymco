@@ -1,14 +1,14 @@
 /*primary colors*/
-$white-cl: #fff;
-$black-cl: #000;
+$white-cl: #ffffff;
+$black-cl: #000000;
 
 /*global text color*/
-$text-cl: #222;
-$text-black-cl: #000;
+$text-white-cl: #ffffff;
+$text-black-cl: #000000;
 
 /*global bg color*/
-$main-bg-cl: #000;
-$black-bg-cl: #000;
+$black-bg-cl: #000000;
+$red-bg-cl: #f4352c;
 
 // timing transition
 $t: 0.4s;
@@ -19,10 +19,10 @@ $font-stack: "Open Sans", sans-serif;
 $font-main: arial;
 
 /*headings typo*/
-$fz-text: 16px;
-$lh-text: normal;
+$fz-text: 60px;
+$lh-text: 21.37px;
 
-$fz-text-m: 16px;
+$fz-text-m: 22px;
 $lh-text-m: normal;
 
 //============================================================//

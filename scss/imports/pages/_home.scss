@@ -1,5 +1,91 @@
 // CSS HOMEPAGE
-h1 {
-    font-size: 60px;
-    color: red;
+.homepage{
+    .slider{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        &__items{
+            width: 100%;
+            height: 100%;
+            &-img{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .text{
+                    font-size: 48px;
+                    font-family: utm-bold;
+                    letter-spacing: 2px;
+                    position: absolute;
+                    top: 65%;
+                    transform: translateY(-65%);
+                    padding-left: 30px;
+                    width: 600px;
+                    line-height: 60px;
+                    z-index: 1;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                    @include midimg(initial);
+                }
+            }
+        }
+        &__bottom{
+            width: 100%;
+            position: relative;
+            .container-fluid{ 
+                position: absolute;
+                bottom: 60px;
+                display: flex;
+                justify-content: space-between;
+                .slider__bottom-left{
+                    span{
+                        writing-mode: vertical-rl;
+                        pointer-events: none;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 15px;
+                        margin-left: 5px;
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                    }
+                    img{
+                        width: 20px;
+                        height: 45px;
+                    }
+                }
+                .slider__bottom-right{
+                    width: 160px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    // // position: relative;
+                    // position: absolute;
+                    // top:100%;
+                    // left: 89%;
+                    // @include transform(translate(4%, -100%));
+                    
+                    .change-number{
+                        padding-right: 10px;
+                        font-family: sfu-bold;
+                        letter-spacing: 2px;
+                        span{   
+                            font-size: 74px;
+                        }
+                    }
+                    .fixed-number{
+                        font-family: sfu-bold;
+                        letter-spacing: 2px;
+                        opacity: 0.5;
+                        span{
+                            font-size: 48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info{
+        
+    }
 }

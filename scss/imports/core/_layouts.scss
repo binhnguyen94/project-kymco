@@ -16,11 +16,22 @@ body {
     width: 100%;
     max-width: $container-max-width;
     margin: auto;
-    @include text($fz-text, $font-main, $lh-text, $text-cl, none);
+    @include text($fz-text-m, utm-normal, $lh-text, $text-white-cl, none);
     background: $white-cl;
     scroll-behavior: smooth;
     position: relative;
     @include customscroll();
+    --pdsection: 120px;
+    main{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        section{
+            &.pd{
+                padding-top: var(--pdsection);
+            }
+        }
+    }
     .container {
         width: 100%;
         padding-right: 15px;
@@ -34,7 +45,7 @@ body {
         padding-left: 30px;
         margin-right: auto;
         margin-left: auto;
-        @include xs {
+        @include mobile {
             padding-right: 15px;
             padding-left: 15px;
         }

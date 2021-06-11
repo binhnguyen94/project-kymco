@@ -10,45 +10,198 @@
     <link rel="stylesheet" href="dest/fonts.css">
 </head>
 <body>
-    <header></header>
-    <main class="mainwrapper homepage"></main>
-    <footer></footer>
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+                <p class="hidden">Kymco</p>
+                <a href="#"><img src="img/home/logo.png" alt=""></a>
             </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">sản phẩm</a></li>
+                    <li><a href="#">công nghệ</a></li>
+                    <li><a href="#">dịch vụ</a></li>
+                    <li><a href="#">tin tức</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <i><img src="img/home/search.svg" alt=""></i>
+                <div class="right__box">
+                    <div class="link"><span>đại lý</span></div>
+                    <div class="register"><span>đăng ký khách hàng</span></div>
+                </div>
+            </div>
+            <div class="btn-menu">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- <nav class="nav">
+        <ul>
+            <li><a href="#">sản phẩm</a></li>
+            <li><a href="#">công nghệ</a></li>
+            <li><a href="#">dịch vụ</a></li>
+            <li><a href="#">tin tức</a></li>
+            <li><a href="#">đại lý</a></li>
+            <li><a href="#">đăng ký khách hàng</a></li>
+        </ul>
+    </nav> -->
+    <main class="mainwrapper homepage">
+        <section class="slider">
+            <div class="slider__items">
+                <div class="slider__items-img">
+                    <h1 class="text">Phong cách thể thao Chiến binh mạnh mẽ</h1>
+                    <img src="img/home/slider1.jpg" alt="">
+                </div>
+                <!-- <div class="slider__items-img">
+                    <h1 class="text">Phong cách thể thao Chiến binh mạnh mẽ</h1>
+                    <img src="img/home/slider2.jpg" alt="">
+                </div>
+                <div class="slider__items-img">
+                    <h1 class="text">Phong cách thể thao Chiến binh mạnh mẽ</h1>
+                    <img src="img/home/slider3.jpg" alt="">
+                </div> -->
+            </div>
+            <div class="slider__bottom">
+                <div class="container-fluid">
+                    <div class="slider__bottom-left">
+                        <span>Kéo xuống</span>
+                        <img src="img/home/down-arrow.png" alt="">
+                    </div>
+                    <div class="slider__bottom-right">
+                        <div  class="change-number"><span>01 /</span></div>
+                        <div class="fixed-number"><span>03</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info pd">
+            <div class="container">
+                <div class="sumenh">
+                    <div class="textbox">
+                        <div class="line"></div>
+                        <h2 class="title">sứ mệnh của kymco</h2>
+                        <p class="content">Trong suốt hơn năm thập kỷ qua, KYMCO không quên sứ mệnh tạo ra các phương tiện cá nhân tiện lợi và hữu ích trong cuộc sống, từ đó giành được trái tim của người tiêu dùng trên toàn thế giới, trong đó có Việt Nam.</p>
+                    </div>
+                    <div class="sumenh__slider">
+                        <div class="sumenh__slider-item">
+                            <img src="img/home/shutterstock.jpg" alt="">
+                        </div>
+                        <div class="control">
+                            <div class="btn-ct --prev"><i><img src="img/home/right-arrow.svg" alt=""></i></div>    
+                            <div class="divide"></div>    
+                            <div class="btn-ct --next"><i><img src="img/home/right-arrow.svg" alt=""></i></div>    
                         </div>
                     </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
+            </div>
+        </section>
+        <section class="product pd">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="title">Sản phẩm hot</h2>
+                    <p class="content">Khám phá dòng xe được yêu thích nhất luôn nằm trong top bán chạy</p>
                 </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                <div class="product__group">
+                    <div class="product__group-item">
+                        <div class="text">
+                            <span class="name">like</span>
+                            <span class="cc">50</span>
+                            <button class="detail">xem chi tiết</button>
+                        </div>
+                        <div class="image"><img src="img/home/layer1.jpg" alt=""></div>
+                    </div>
+                    <div class="product__group-item --center">
+                        <div class="text">
+                            <span class="name">k-pipe</span>
+                            <span class="cc">125</span>
+                            <button class="detail">xem chi tiết</button>
+                        </div>
+                        <div class="image"><img src="img/home/layer2.jpg" alt=""></div>
+                    </div>
+                    <div class="product__group-item">
+                        <div class="text">
+                            <span class="name">candy</span>
+                            <span class="cc">50</span>
+                            <button class="detail">xem chi tiết</button>
+                        </div>
+                        <div class="image"><img src="img/home/layer3.jpg" alt=""></div>
+                    </div>
                 </div>
             </div>
+            <button class="detail --more">xem thêm sản phẩm khác</button>
+        </section>
+        <section class="background pd">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="title">chọn xe theo cá tính</h2>
+                    <p class="content">Xe bên bạn mang đậm chất riêng</p>
+                </div>
+                <button class="detail --bg">Chọn xe dành riêng cho bạn!</button>
+            </div>
+        </section>
+        <section class="news pd">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="title">tin tức</h2>
+                    <p class="content">Tổng hợp tin tức mới nhất từ KYMCO Việt Nam & quốc tế</p>
+                </div>
+                <div class="news__list">
+                    <div class="news__list-item">
+                        <div class="news-img"><img src="img/home/news1.jpg" alt=""></div>
+                        <div class="news-content">
+                            <h3>discover your dream bike</h3>
+                            <p>experience the range to believe it</p>
+                            <span>xem chi tiết</span>
+                        </div>
+                    </div>
+                    <div class="news__list-item">
+                        <div class="news-img"><img src="img/home/news2.jpg" alt=""></div>
+                        <div class="news-content">
+                            <h3>extend your 2-years limited warranty</h3>
+                            <p>Until March 20, 2020</p>
+                            <span>xem chi tiết</span>
+                        </div>
+                    </div>
+                    <div class="news__list-item">
+                        <div class="news-img"><img src="img/home/news3.jpg" alt=""></div>
+                        <div class="news-content">
+                            <h3>new game for your bike this year</h3>
+                            <p>Roll into Milwaukee Labor Day Weekend 2018 and join thecelebration. No matter what...</p>
+                            <span>xem chi tiết</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="detail btn-news">xem thêm tin tức khác</button>
+            </div>
+        </section>
+        <section class="network pd">
+            <div class="textbox">
+                <h2 class="title">kymco network</h2>
+                <p class="content">Mạng lưới KYMCO trên toàn thế giới</p>
+            </div>
+            <button class="detail btn-network">tìm hiểu thêm</button>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h3>Kymco vietnam</h3>
+            <div class="social">
+                <a href="#"><i><img src="" alt="">fb</i></a>
+                <a href="#"><i><img src="" alt="">youtube</i></a>
+            </div>
+            <div class="nav-ft">
+                <ul>
+                    <li><a href="#">Về Kymco</a></li>
+                    <li><a href="#">tuyển dụng</a></li>
+                    <li><a href="#">liên hệ</a></li>
+                    <li><a href="#">Kymco network</a></li>
+                </ul>
+            </div>
+            <div class="logo-ft"><img src="img/home/logo.png" alt=""></div>
+            <p class="copyright">KWANG YANG VIỆT NAM © 2018, All Rights Reserved</p>
         </div>
-    </div>
+    </footer>
 
     <script src="dest/jsmain.min.js"></script>
     <script src="dest/main.js"></script>
