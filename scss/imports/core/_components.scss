@@ -1,1 +1,30 @@
 // css components
+.textbox{
+    --width: 475px;
+    color: $black-cl;
+    width: var(--width);
+    z-index: 1;
+    .title{
+        @include text($fz-text, sfu-bold, 65px, $black-cl, uppercase);
+        letter-spacing: 2px;
+        padding: 15px 0;
+    }
+    .content{
+        @include text($fz-text-m, utm-normal, 25px, $black-cl, none);
+        letter-spacing: 2px;
+    }
+    &.--product{
+        --width: 100%;
+    }
+}
+
+.text{
+    .name{
+        @include text(47px, sfu-bold, 40px, $white-cl, uppercase);
+        letter-spacing: 2px;
+    }
+    .cc{
+        @include text(78px, sfu-bold, 75px, $white-cl, uppercase);
+        letter-spacing: 2px;
+    }
+}
