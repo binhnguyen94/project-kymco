@@ -1,30 +1,73 @@
 // css button, title, icon, elements...
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.btn-ct{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    cursor: pointer;
-    i{
-        margin: 0 20px;
-        img{
-            width: 20px;
-            height: 30px;
-        }
+.btn-ct {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  i {
+    margin: 0 20px;
+    img {
+      width: 20px;
+      height: 30px;
     }
+  }
 }
 
-.detail{
-    width: 125px;
-    height: 33px;
-    background: $red-bg-cl;
-    border-radius: 25px;
-    border: initial;
-    @include text(15px, sfu-bold, $lh-text, $white-cl, uppercase);
-    letter-spacing: 2px;
+.detail {
+  width: 125px;
+  height: 33px;
+  background: $red-bg-cl;
+  border-radius: 50px;
+  border: initial;
+  @include text(15px, sfu-bold, $lh-text, $white-cl, uppercase);
+  letter-spacing: 2px;
+  &.--bg {
+    width: 355px;
+    height: 65px;
+    @include text(25px, sfu-bold, $lh-text, $white-cl, uppercase);
+    margin: 70px 0;
+  }
+  &.--news {
+    width: 350px;
+    height: 65px;
+    font-size: 25px;
+  }
+  &.--network {
+    width: 355px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+.news-content {
+  height: 250px;
+  width: 345px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 21pt;
+  margin-top: 10px;
+  padding: 0 25px;
+  position: relative;
+  h3 {
+    @include text(32px, sfu-bold, 40px, $white-cl, uppercase);
+  }
+  p {
+    @include text(18px, utm-normal, $lh-text-m, $white-cl, none);
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+  }
+  span {
+    text-decoration: underline;
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

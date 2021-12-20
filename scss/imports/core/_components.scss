@@ -16,6 +16,18 @@
     &.--product{
         --width: 100%;
     }
+    &.--background{
+        --width: 410px;
+        .title{
+            color: initial;
+            width: 285px;
+            font-size: 60px;
+        }
+        .content{
+            color: initial;
+            font-size: 20px;
+        }
+    }
 }
 
 .text{

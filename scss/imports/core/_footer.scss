@@ -1,1 +1,60 @@
 // css footer
+footer {
+    background-color: $black-bg-cl;
+    .container {
+        text-align: center;
+        padding: 50px 0;
+        h3 {
+            @include text(35px, sfu-bold, $lh-text, $white-cl, uppercase);
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+        .social {
+            padding: 25px 0;
+            a {
+                i {
+                    .fb {
+                        width: 32px;
+                        height: 40px;
+                        padding-bottom: 5px;
+                        margin-right: 10px;
+                    }
+                    .youtube {
+                        width: 43px;
+                        height: 45px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .nav-ft {
+            padding: 50px 0;
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    a {
+                        padding: 0 5px;
+                        text-decoration: none;
+                        @include text(16px, utm-normal, $lh-text, $white-cl, uppercase);
+                    }
+                    
+                }
+                li:not(:last-child):after{
+                    content: "";
+                    width: 2px;
+                    height: 14px;
+                    background-color: #fff !important;
+                    display: inline-block;
+                    margin: 0px 8px 0 14px;
+                }
+            }
+        }
+        .logo-ft {
+            margin-bottom: 15px;
+        }
+        .copyright {
+            @include text(16px, utm-normal, $lh-text, $white-cl, uppercase);
+        }
+    }
+}
