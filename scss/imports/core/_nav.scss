@@ -1,1 +1,33 @@
 // css navigator (Menu)
+.nav {
+    display: none;
+    background: $red-bg-cl;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    position: fixed;
+    ul {
+        // width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        @include transform(translateX(-50%));
+        li {
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            a {
+                width: 100%;
+                text-decoration: none;
+                @include text(30px, sfu-bold, 60px, $white-cl, uppercase);
+                letter-spacing: 3px;
+            }
+        }
+    }
+    &.active {
+        display: block;
+    }
+}
+
